@@ -45,6 +45,8 @@ int main(){
     return 0;
 }
 
+//kod maina ktory uzywalem do testowania czasu wykonywania funkcji w zaleznosci od dlugosci wiadomosci
+
     //Priority_queue test;
     //std::string message(500, 'X' );
     //
