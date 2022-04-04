@@ -34,9 +34,11 @@ public:
      * @brief removes node with the lowest priority
      * 
      * @return 0 if node was removed successfully
-     * @return -1 if queue was empty
      */
     int pop();
+
+
+    void pop_all();
 
     /**
      * @brief adds node depending on priority

@@ -28,13 +28,20 @@ int Priority_queue::pop(){
         Node *tmp = head;               //upomocnicza wartosc wskazuje na to, na co wskazywal do tej pory head
         print();                    
         head = head->get_next();        //ustawiam wskaznik head na nastepny wezel
-        free(tmp);                      //zwalniam pamiec z usunietego wezla
+        delete(tmp);                    //zwalniam pamiec z usunietego wezla
         length--;
         return 0;
     }
     else{
         throw std::logic_error("Queue is empty!");
-        return -1;
+    }
+}
+
+
+void Priority_queue::pop_all(){
+    uint len = size();
+    for(uint x=0; x<len; x++){
+        pop();
     }
 }
 
@@ -45,7 +52,7 @@ int Priority_queue::push(const uint & prio, const char & item){
     Node *tmp = head;                           //wskaznik na element wskazywany przez head
     if(!is_empty()){
 
-        if(tmp->get_priority() > prio){         //przypadek gdy element ma najwyzszy priorytet do tej pory
+        if(tmp->get_priority() > prio){         //przypadek gdy dodawany element ma najmmniejszy priorytet do tej pory
             add->set_next(tmp);
             head = add;
             length++;
