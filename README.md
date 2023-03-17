@@ -6,7 +6,7 @@ My task was to implement an ADT structure to handle this problem.
 
 ## Performance testing
 In addition I conducted tests of the execution time of the operation depending on the number of packets.
-Results are shown in ``PAMSI#1.pdf`` file that is written in Polish.
+Results are shown in ``PAMSI_1.pdf`` file that is written in Polish.
 
 ## Running the program
 After cloning repository simplyt run ` make ` command. Later you can run the program using `./pri.out`.
