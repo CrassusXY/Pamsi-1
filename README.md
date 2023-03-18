@@ -9,4 +9,4 @@ In addition I conducted tests of the execution time of the operation depending o
 Results are shown in ``PAMSI_1.pdf`` file that is written in Polish.
 
 ## Running the program
-After cloning repository simplyt run ` make ` command. Later you can run the program using `./pri.out`.
+After cloning the repository simply run `make` command. Later you can run the program using `./pri.out`.
